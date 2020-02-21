@@ -321,4 +321,6 @@ okay.addEventListener('click', function() { //Sets new names
     points(); 
 })
 
-//And that's it. It's just tic-tac-toe (noughts and crosses) but I learned some things making this and also tried to implement some of the things learned in the lessons
+// Still have to clean up code
+
+//Done by Lonwabo Mvovo
