@@ -5,9 +5,8 @@ body {
 
 .head {
     display: grid;
-    gap: 50px;
+    gap: auto;
     grid-template-columns: 400px 400px 400px;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     text-align: center;
     justify-content: center;
 }
@@ -152,6 +151,60 @@ body {
     background-color: rgb(53, 0, 11);
 }
 
-/* Still have to make resposive for all devices */
+div.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1233px) {
+    .block1 {
+        text-align: center;
+    }
+
+    .block1:nth-child(2) {
+        grid-row: 1;
+    }
+
+    .head {
+        grid-template-columns: 100%;
+    }
+
+    .block1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 627px) {
+    div.mobile {
+        display: block;
+    }
+
+    div.desktop {
+        display: none;
+    }
+
+    .newGame, .newRound {
+        padding-top: 10px;
+        line-height: 2.6rem;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .field {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .field {
+        gap: 5px;
+    }
+
+    .newGame, .newRound {
+        padding-top: 10px;
+        line-height: 2.6rem;
+        margin: 10px;
+    }
+}
 
 /* Done by Lonwabo Mvovo */
