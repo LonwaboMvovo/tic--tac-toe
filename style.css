@@ -1,5 +1,6 @@
 body {
     background-color: rgb(253, 240, 188);
+    margin: 0px;
     padding-top: 30px;
 }
 
@@ -110,7 +111,7 @@ body {
     box-shadow: 0px 0px 20px black;
     border-radius: 8px;
     position: absolute;
-    top: 41.5%;
+    top: 280px;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 6969;
@@ -171,6 +172,10 @@ div.mobile {
     .block1 {
         width: 100%;
     }
+
+    .rules {
+        margin-top: 120px;
+    }
 }
 
 @media screen and (max-width: 627px) {
@@ -186,6 +191,10 @@ div.mobile {
         padding-top: 10px;
         line-height: 2.6rem;
         margin: 20px;
+    }
+
+    .rules {
+        margin-top: 120px;
     }
 }
 
@@ -204,6 +213,10 @@ div.mobile {
         padding-top: 10px;
         line-height: 2.6rem;
         margin: 10px;
+    }
+
+    .rules {
+        width: 93%;
     }
 }
 
