@@ -1,7 +1,6 @@
 body {
     background-color: rgb(253, 240, 188);
     margin: 0px;
-    font-family: 'Permanent Marker', cursive;
     padding-top: 30px;
 }
 
@@ -39,6 +38,7 @@ body {
     height: 100px;
     background-color: crimson;  
     transition: 0.3s;
+    font-family: 'Permanent Marker', cursive;
     font-size: 7em;
     padding: 0%;
     text-align: center;
