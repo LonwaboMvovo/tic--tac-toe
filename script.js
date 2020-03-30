@@ -5,7 +5,8 @@ let player2point; //Player two's points
 let playerOne; //Declaring player one's name
 let playerTwo; //Declaring player two's name
 const field = document.querySelectorAll('.block2'); //All the available spots to play on the website
-const newGame = document.querySelector('.newGame'); //The newGame button
+const newGameDesktop = document.querySelector('.desktop'); //The newGame button on desktops
+const newGameMobile = document.querySelector('.mobile'); //The newGame button on mobiles
 const newRound = document.querySelector('.newRound'); //The newRound button
 let j; //Declaring j. j is an integer that alternates between odd and even numbers to determine who's turn it is
 let jDraw; //Declaring jDraw. jDraw is an interger that helps determine if a draw has been reached
@@ -272,7 +273,22 @@ newRound.addEventListener('click', function() { //Cleans the board so that it is
     }
 })
 
-newGame.addEventListener('click', function() { //Resets all variables, cleans the board
+newGameDesktop.addEventListener('click', function() { //Resets all variables, cleans the board
+    rules = 0; 
+    for (let i = 0; i < field.length; i++){
+        field[i].textContent = ''; 
+        field[i].classList.remove('win'); 
+    }
+    player1.classList.remove('turn');
+    player2.classList.remove('turn');
+    rulesShow(); 
+    j = 1; 
+    jDraw = 1;
+    whoStart = 1; //whoStart is an integer that increases until a new game starts and it alternates rounds to see who starts
+    gameOver = false;
+})
+
+newGameMobile.addEventListener('click', function() { //Resets all variables, cleans the board
     rules = 0; 
     for (let i = 0; i < field.length; i++){
         field[i].textContent = ''; 
