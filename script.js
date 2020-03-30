@@ -337,6 +337,4 @@ okay.addEventListener('click', function() { //Sets new names
     points(); 
 })
 
-// Still have to clean up code
-
 //Done by Lonwabo Mvovo
